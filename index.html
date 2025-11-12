@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Singing Choir</title>
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar bg-dark text-white">
+        <button class="btn-close btn-close-white m-3" onclick="toggleSidebar()"></button>
+        <div class="d-flex align-items-center mt-4 mb-3 px-3">
+            <img class="logo" src="assets/logo.png" alt="Logo" style="width: 30px; height: 30px; border-radius: 50%; margin-right: 10px;">
+            <h5 class="mb-0"><b>The Singing Choir</b></h5>
+        </div>
+        <ul class="nav flex-column" id="sidebarNav">
+        <!-- Akan diisi otomatis dengan item dari navbar -->
+    </ul>
+</div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <button class="btn btn-outline-light me-2" id="sidebarToggle" onclick="toggleSidebar()">
+    <i class="bi bi-list"></i>
+    </button>
+
+        <div class="container">
+            <a class="navbar-brand" href="#home"><img class="logo" src="assets/logo.png" alt="Logo" style="width: 30px; height: 30px; border-radius: 50%; margin-right: 10px;">The Singing Choir</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#officers">Officers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#members">Members</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#history">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#alumni">Alumni</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#registration">Registration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section hero-section text-center text-white d-flex align-items-center justify-content-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold" style="text-shadow: 3px 5px 10px rgb(83, 3, 3)">The Singing Choir</h1>
+            <p class="lead">We Sing for the Glory of God</p>
+            <a href="#about" class="btn btn-light btn-lg nav-link" id="learnMoreBtn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 text-white" style="background: rgb(137, 54, 54);">About Us</h2>
+            <div class="form-container">
+              <p class="text-center">Our choir organization is dedicated to bringing people together through the power of music. We perform a variety of genres and welcome singers of all levels.</p>
+            </div>
+             </div>
+    </section>
+
+    <!-- Officers Section -->
+<section id="officers" class="section py-5">
+  <div class="container">
+    <h2 class="text-center mb-5 text-white" style="background: rgb(137, 54, 54);">Officers</h2>
+    <div class="row g-4 justify-content-center form-container">
+      <div class="col-md-4">
+        <div class="card officer-card text-center shadow-sm border-0">
+          <img src="assets/director.jpg" class="card-img-top officer-photo" alt="Director">
+          <div class="card-body">
+            <h5 class="card-title fw-bold mb-1">John Doe</h5>
+            <p class="card-text mb-3">Director</p>
+            <div class="officer-icons">
+              <a href="#" class="text-white me-3"><i class="bi bi-envelope-fill"></i></a>
+              <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card officer-card text-center shadow-sm border-0">
+          <img src="assets/assist.jpg" class="card-img-top officer-photo" alt="Assistant Director">
+          <div class="card-body">
+            <h5 class="card-title fw-bold mb-1">Jane Smith</h5>
+            <p class="card-text  mb-3">Assistant Director</p>
+            <div class="officer-icons">
+              <a href="#" class="text-white me-3"><i class="bi bi-envelope-fill"></i></a>
+              <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card officer-card text-center shadow-sm border-0">
+          <img src="assets/secretary.jpg" class="card-img-top officer-photo" alt="Secretary">
+          <div class="card-body">
+            <h5 class="card-title fw-bold mb-1">Bob Johnson</h5>
+            <p class="card-text mb-3">Secretary</p>
+            <div class="officer-icons">
+              <a href="#" class="text-white me-3"><i class="bi bi-envelope-fill"></i></a>
+              <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Members Section -->
+<section id="members" class="section py-5">
+  <div class="container">
+    <h2 class="text-center mb-5 text-white" style="background: rgb(137, 54, 54);">Members</h2>
+    <div class="form-container">
+      <!-- Soprano -->
+      <div class="voice-section mb-5">
+        <h4 class="fw-bold mb-3 text-center text-danger">Soprano</h4>
+        <div class="row g-4 fc">
+          <div class="col-md-4 col-sm-6">
+            <div class="card member-card border-0 shadow-sm">
+              <img src="assets/sopran1.jpeg" class="card-img-top member-photo" alt="Soprano Member 1">
+              <div class="card-body text-center"><p class="fw-semibold mb-0">Alice</p></div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="card member-card border-0 shadow-sm">
+              <img src="assets/sopran2.jpg" class="card-img-top member-photo" alt="Soprano Member 2">
+              <div class="card-body text-center"><p class="fw-semibold mb-0">Beth</p></div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="card member-card border-0 shadow-sm">
+              <img src="assets/sopran3.jpg" class="card-img-top member-photo" alt="Soprano Member 3">
+              <div class="card-body text-center"><p class="fw-semibold mb-0">Clara</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Alto -->
+      <div class="voice-section mb-5">
+        <h4 class="fw-bold mb-3 text-center text-danger">Alto</h4>
+        <div class="row g-4 fc">
+          <div class="col-md-4 col-sm-6">
+            <div class="card member-card border-0 shadow-sm">
+              <img src="assets/alto1.png" class="card-img-top member-photo" alt="Alto Member 1">
+              <div class="card-body text-center"><p class="fw-semibold mb-0">Diana</p></div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="card member-card border-0 shadow-sm">
+              <img src="assets/alto2.png" class="card-img-top member-photo" alt="Alto Member 2">
+              <div class="card-body text-center"><p class="fw-semibold mb-0">Ella</p></div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="card member-card border-0 shadow-sm">
+              <img src="assets/alto3.png" class="card-img-top member-photo" alt="Alto Member 3">
+              <div class="card-body text-center"><p class="fw-semibold mb-0">Fiona</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tenor -->
+      <div class="voice-section mb-5">
+        <h4 class="fw-bold mb-3 text-center text-danger">Tenor</h4>
+        <div class="row g-4 fc">
+          <div class="col-md-4 col-sm-6">
+            <div class="card member-card border-0 shadow-sm">
+              <img src="assets/tenor1.jpg" class="card-img-top member-photo" alt="Tenor Member 1">
+              <div class="card-body text-center"><p class="fw-semibold mb-0">George</p></div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="card member-card border-0 shadow-sm">
+              <img src="assets/tenor2.jpg" class="card-img-top member-photo" alt="Tenor Member 2">
+              <div class="card-body text-center"><p class="fw-semibold mb-0">Henry</p></div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="card member-card border-0 shadow-sm">
+              <img src="assets/tenor3.jpg" class="card-img-top member-photo" alt="Tenor Member 3">
+              <div class="card-body text-center"><p class="fw-semibold mb-0">Ian</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bass -->
+      <div class="voice-section">
+        <h4 class="fw-bold mb-3 text-center text-danger">Bass</h4>
+        <div class="row g-4 fc">
+          <div class="col-md-4 col-sm-6">
+            <div class="card member-card border-0 shadow-sm">
+              <img src="assets/bass1.png" class="card-img-top member-photo" alt="Bass Member 1">
+              <div class="card-body text-center"><p class="fw-semibold mb-0">Jack</p></div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="card member-card border-0 shadow-sm">
+              <img src="assets/bass2.jpeg" class="card-img-top member-photo" alt="Bass Member 2">
+              <div class="card-body text-center"><p class="fw-semibold mb-0">Kevin</p></div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="card member-card border-0 shadow-sm">
+              <img src="assets/bass3.jpg" class="card-img-top member-photo" alt="Bass Member 3">
+              <div class="card-body text-center"><p class="fw-semibold mb-0">Leo</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>
+</section>
+
+
+    <!-- History Section -->
+    <section id="history" class="section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 text-white" style="background: rgb(137, 54, 54);">History</h2>
+            <div class="form-container">
+              <div class="timeline">
+                <div class="timeline-item">
+                    <h5>2010</h5>
+                    <p>Founded by a group of passionate musicians.</p>
+                </div>
+                <div class="timeline-item">
+                    <h5>2015</h5>
+                    <p>First major performance at the local theater.</p>
+                </div>
+                <div class="timeline-item">
+                    <h5>2020</h5>
+                    <p>Expanded membership and started online performances.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="registration" class="section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 text-white" style="background: rgb(137, 54, 54);">Registration</h2>
+            <div class="form-container">
+                <form id="registrationForm">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="dob" class="form-label">Date of Birth</label>
+                            <input type="date" class="form-control" id="dob" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Gender</label>
+                            <div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender" id="male" value="male" required>
+                                    <label class="form-check-label" for="male">Male</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender" id="female" value="female" required>
+                                    <label class="form-check-label" for="female">Female</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender" id="other" value="other" required>
+                                    <label class="form-check-label" for="other">Other</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Address</label>
+                            <textarea class="form-control" id="address" rows="3" required></textarea>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Interest in Choir</legend>
+                        <div class="mb-3">
+                            <label for="experience" class="form-label">Experience Level: <span id="experienceValue">1</span></label><br>
+                            <input type="range" class="form-range" id="experience" min="1" max="5" value="1" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="voice" class="form-label">Voice Part</label>
+                            <select class="form-select" id="voice" required>
+                                <option value="">Select</option>
+                                <option value="soprano">Soprano</option>
+                                <option value="alto">Alto</option>
+                                <option value="tenor">Tenor</option>
+                                <option value="bass">Bass</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="motivation" class="form-label">Motivation on joining this choir:</label>
+                            <textarea class="form-control" id="address" rows="3" required></textarea>
+                        </div>
+                    </fieldset>
+                    <div class="mb-3">
+                        <label>Registration Progress</label>
+                        <div class="progress">
+                            <div class="progress-bar" id="registrationProgress" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <small class="text-muted">Registrations: <span id="registrationCount">0</span>/100</small>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="terms" required>
+                        <label class="form-check-label" for="terms">I agree to the <a href="#" target="_blank">Terms and Conditions</a></label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 text-white" style="background: rgb(137, 54, 54);">Contact Us</h2>
+            <div class="row form-container">
+                <div class="col-md-6">
+                    <h5>Get in Touch</h5>
+                    <p>Email: info@choir.org</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Address: 123 Music St, Harmony City</p>
+                </div>
+                <div class="col-md-6">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="contactName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="contactName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="contactEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="loginEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginPassword" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alumni Section -->
+    <section id="alumni" class="section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 text-white" style="background: rgb(137, 54, 54);">Alumni</h2>
+            <div class="form-container">
+              <div class="mb-3">
+                  <label for="sortSelect" class="form-label">Sort by:</label>
+                  <select class="form-select" id="sortSelect" onchange="sortAlumni()">
+                      <option value="name">Name</option>
+                      <option value="section">Section</option>
+                      <option value="enterYear">Enter Year</option>
+                      <option value="exitYear">Exit Year</option>
+                  </select>
+              </div>
+              <table class="table table-striped table-hover">
+                  <thead>
+                      <tr>
+                          <th>Name</th>
+                          <th>Section</th>
+                          <th>Years</th>
+                      </tr>
+                  </thead>
+                  <tbody id="alumniTable">
+                      <tr>
+                          <td>Anna Lee</td>
+                          <td>Former Director</td>
+                          <td>2015-2018</td>
+                      </tr>
+                      <tr>
+                          <td>Brian Kim</td>
+                          <td>Former Assistant Director</td>
+                          <td>2016-2019</td>
+                      </tr>
+                      <tr>
+                          <td>Catherine Wu</td>
+                          <td>Former Secretary</td>
+                          <td>2017-2020</td>
+                      </tr>
+                      <tr>
+                          <td>David Park</td>
+                          <td>Soprano</td>
+                          <td>2010-2015</td>
+                      </tr>
+                      <tr>
+                          <td>Emma Thompson</td>
+                          <td>Alto</td>
+                          <td>2012-2017</td>
+                      </tr>
+                      <tr>
+                          <td>Felix Garcia</td>
+                          <td>Tenor</td>
+                          <td>2013-2018</td>
+                      </tr>
+                      <tr>
+                          <td>Grace Liu</td>
+                          <td>Bass</td>
+                          <td>2014-2019</td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 The Singing Choir. All rights reserved.</p>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
