@@ -342,3 +342,8 @@ legend {
   padding: 10px;
   border-radius: 10px;
 }
+
+.wh {
+  color: white;
+  text-decoration: none;
+}
